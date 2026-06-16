@@ -1,1 +1,193 @@
-<!-- html here -->
+<!DOCTYPE html>
+<html lang="en">
+    <title>Figma Design</title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="page">
+            <div class="logo">
+                <h1>LOGO</h1>
+                <div class="right-nav">
+                    <div class="search">
+                    <input type="text" placeholder="Search tasks or boards" class="search-input">
+                    <img src="images/search.png" class="icon">
+                </div>
+                <div class="notifications">
+                    <img src="images/notificcation icon.png" alt="Notifications">
+                </div>
+                <div class="profile">
+                    <img src="images/avatar.png" alt="Profile">
+                </div>
+                </div>
+                <div class="sidebar">
+                    <button class="btn">
+                        <img src="images/home.png" class="icon" >
+                        Dashboard</button>
+                    <button class="btn">
+                        <img src="images/boards.png" class="icon">
+                        Boards</button>
+                    <button class="btn">
+                        <img src="images/tasks.png" class="icon">
+                        Tasks</button>
+                    <button class="btn">
+                        <img src="images/settings.png" class="icon">
+                        Settings</button>
+                    <div class="new-board">
+                    <button class="btn">
+                        <img src="images/plus.png" class="icon">
+                         New Board</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <h1>Dashboard</h1>
+                <p>Welcome back, Avi!</p>
+                <div class="container">
+                    <div class="card">
+                        <h3>To Do</h3>
+                        <h3>7</h3>
+                    </div>
+                    <div class="card">
+                        <h3>In Progress</h3>
+                        <h3>3</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Done</h3>
+                        <h3>2</h3>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <div class="recent-boards-section">
+                        <h4>Recent Boards</h4>
+                        <div class="recent-boards">
+                        <div class="cards">
+                            <p>Sprint Planning</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                            <p>70% complete</p>
+                        </div>
+                        <div class="cards">
+                            <p>Design Api</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+                            <p>40% complete</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="recent-tasks-section">
+                        <h4>Recent Tasks</h4>
+                        <div class="recent-tasks">
+                        <div class="cardss">
+                            John completed “Api Integration”
+                        </div>
+                        <div class="cardss">
+                            Ram moved "Login Screen" to In Progress
+                        </div>
+                        <div class="cardss">
+                        Shyam created "Database Schema"
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mobile-shell" aria-label="Mobile dashboard">
+            <header class="mobile-topbar">
+                <button class="mobile-icon-button" aria-label="Open menu">
+                    <span class="menu-lines" aria-hidden="true"></span>
+                </button>
+                <h1>DashBoard</h1>
+                <div class="mobile-topbar-actions">
+                    <button class="mobile-icon-button" aria-label="Notifications">
+                        <img src="images/notificcation icon.png" alt="" class="mobile-top-icon">
+                    </button>
+                    <img src="images/avatar.png" alt="Profile" class="mobile-avatar">
+                </div>
+            </header>
+
+            <main class="mobile-content">
+                <p class="mobile-welcome">Welcome back, Avi!</p>
+
+                <div class="mobile-search">
+                    <input type="text" placeholder="Search tasks or boards" class="mobile-search-input" aria-label="Search tasks or boards">
+                    <img src="images/search.png" class="mobile-search-icon" alt="">
+                </div>
+
+                <section class="mobile-section">
+                    <h2>Task Overview</h2>
+                    <div class="mobile-overview">
+                        <div class="mobile-card">
+                            <h3>To Do</h3>
+                            <span>7</span>
+                        </div>
+                        <div class="mobile-card">
+                            <h3>In Progress</h3>
+                            <span>3</span>
+                        </div>
+                        <div class="mobile-card">
+                            <h3>Done</h3>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mobile-section">
+                    <h2>Recent Boards</h2>
+                    <div class="mobile-list">
+                        <div class="mobile-list-item">
+                            <p>Sprint Planning</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                            <p>70% complete</p>
+                        </div>
+                        <div class="mobile-list-item">
+                            <p>Design Api</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+                            <p>40% complete</p>
+                        </div>
+                        </div>
+                </section>
+
+                <section class="mobile-section">
+                    <h2>Recent Activity</h2>
+                    <div class="mobile-list">
+                        <div class="mobile-list-item mobile-list-item-active">John completed “Api Integration”</div>
+                        <div class="mobile-list-item">Ram moved "Login Screen" to In Progress</div>
+                        <div class="mobile-list-item">Shyam created "Database Schema"</div>
+                    </div>
+                </section>
+            </main>
+
+            <nav class="mobile-bottom-nav" aria-label="Bottom navigation">
+                <button class="mobile-bottom-item active">
+                    <img src="images/home.png" class="mobile-bottom-icon" alt="">
+                    <span>Dashboard</span>
+                </button>
+                <button class="mobile-bottom-item">
+                    <img src="images/boards.png" class="mobile-bottom-icon" alt="">
+                    <span>Boards</span>
+                </button>
+                <button class="mobile-bottom-item">
+                    <img src="images/tasks.png" class="mobile-bottom-icon" alt="">
+                    <span>Tasks</span>
+                </button>
+                <button class="mobile-bottom-item">
+                    <img src="images/settings.png" class="mobile-bottom-icon" alt="">
+                    <span>Settings</span>
+                </button>
+            </nav>
+        </div>
+    </body>
+</html>
